@@ -1,0 +1,15 @@
+{
+	"name": "tomorrow-api-proxy",
+	"version": "0.0.1",
+	"description": "Google Cloud Function that proxies requests to a host specified in config.",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gcloud functions deploy tomorrow-api-proxy --runtime nodejs10 --trigger-http --memory=128 --timeout=60s"
+	},
+	"keywords": [],
+	"devDependencies": {},
+	"dependencies": {
+		"express": "^4.17.1",
+		"http-proxy-middleware": "^1.1.1"
+	}
+}
